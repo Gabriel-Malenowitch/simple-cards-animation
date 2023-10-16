@@ -1,0 +1,29 @@
+.card {
+    border: solid black 2px;
+    position: absolute;
+    height: 150px;
+    width: 70px;
+    margin: 8px;
+    transition: ease-in-out 0.5s;
+
+    &.card_1 { background-color: beige; }
+    &.card_2 { background-color: blanchedalmond; }
+    &.card_3 { background-color: bisque; }
+
+    &.active {
+        &.card_1 {
+            transform: rotate(-45deg);
+            margin-right: 170px;
+            margin-top: 70px;
+        }
+        &.card_2 {
+            z-index: 99;
+        }
+        &.card_3 {
+            transform: rotate(45deg);
+            margin-left: 170px;
+            margin-top: 70px;
+        }
+    }
+}
+
